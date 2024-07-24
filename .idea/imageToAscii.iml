@@ -6,5 +6,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="tda1-fiuba-24" />
+    <orderEntry type="module" module-name="expImageProcessing" />
   </component>
 </module>

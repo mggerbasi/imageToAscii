@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../expImageProcessing/.idea/expImageProcessing.iml" filepath="$PROJECT_DIR$/../expImageProcessing/.idea/expImageProcessing.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/imageToAscii.iml" filepath="$PROJECT_DIR$/.idea/imageToAscii.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tda1-fiuba-24/.idea/tda1-fiuba-24.iml" filepath="$PROJECT_DIR$/../tda1-fiuba-24/.idea/tda1-fiuba-24.iml" />
     </modules>
   </component>
 </project>
