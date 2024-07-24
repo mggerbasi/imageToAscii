@@ -1,8 +1,5 @@
-import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
-from PIL import Image
-import scipy.misc
 import cv2
 
 MAX_PIXELS = 4000

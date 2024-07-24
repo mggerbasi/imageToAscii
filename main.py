@@ -1,6 +1,8 @@
+import math
 from sys import argv
 import numpy as np
 import parsing as par
+
 
 CHAR_RAMP = "@%#*+=-:. "
 CANT_CAR = len(CHAR_RAMP)-1
@@ -8,7 +10,9 @@ CANT_CAR = len(CHAR_RAMP)-1
 
 def obtain_char(p):
     ind = 0
-    bright = (p[0] * 0.299 + p[1] * 0.587 + p[2] * 0.144)/1.3
+    bright = math.sqrt((p[0]**2 * 0.299 + p[1]**2 * 0.587 + p[2]**2 * 0.144)/1.03)
+    if len(p) == 4 and p[3] == 0:
+        bright = 1
     if bright != 0:
         ind = int(bright*CANT_CAR)
     return CHAR_RAMP[ind]
