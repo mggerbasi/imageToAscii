@@ -1,4 +1,4 @@
-from sys import argv
+from sys import argv, stdout
 import math
 import cv2
 import numpy as np
@@ -40,8 +40,8 @@ def obtain_ascci(img_narr: np.ndarray, file_res: str):
 
 
 if __name__ == "__main__":
-    if len(argv) < 2:
-        print("Use: python3 img_to_ascii.py <image-name> <result-name>")
+    if len(argv) < 2 or len(argv) > 3:
+        print("Use: python3 img_to_ascii.py <png-file> <output-file>")
     else:
         try:
             if argv[1].endswith(".png"):
@@ -50,6 +50,5 @@ if __name__ == "__main__":
                     f_res = argv[2]
                 img = parse_png(argv[1])
                 obtain_ascci(img, f_res)
-
         except FileNotFoundError:
             print("File doesn't exist")
