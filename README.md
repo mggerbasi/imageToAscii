@@ -14,4 +14,4 @@
 ## Clarifications
 
 - Program only accepts images in '.png' format
-- Default name for <output-file> will be '_.txt'
+- Default name for `<output-file>` will be '_.txt'
